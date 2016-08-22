@@ -1,0 +1,792 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		830C862F1D663961004ADE31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 830C862E1D663961004ADE31 /* main.m */; };
+		830C86321D663961004ADE31 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 830C86311D663961004ADE31 /* AppDelegate.m */; };
+		830C86351D663961004ADE31 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830C86341D663961004ADE31 /* ViewController.m */; };
+		830C86381D663961004ADE31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830C86361D663961004ADE31 /* Main.storyboard */; };
+		830C863B1D663961004ADE31 /* LifeSum.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 830C86391D663961004ADE31 /* LifeSum.xcdatamodeld */; };
+		830C863D1D663961004ADE31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830C863C1D663961004ADE31 /* Assets.xcassets */; };
+		830C86401D663961004ADE31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830C863E1D663961004ADE31 /* LaunchScreen.storyboard */; };
+		830C864B1D663961004ADE31 /* HealthAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 830C864A1D663961004ADE31 /* HealthAppTests.m */; };
+		830C86561D663961004ADE31 /* HealthAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 830C86551D663961004ADE31 /* HealthAppUITests.m */; };
+		830C86661D664475004ADE31 /* categoriesStatic.json in Resources */ = {isa = PBXBuildFile; fileRef = 830C86631D664475004ADE31 /* categoriesStatic.json */; };
+		830C86671D664475004ADE31 /* exercisesStatic.json in Resources */ = {isa = PBXBuildFile; fileRef = 830C86641D664475004ADE31 /* exercisesStatic.json */; };
+		830C86681D664475004ADE31 /* foodStatic.json in Resources */ = {isa = PBXBuildFile; fileRef = 830C86651D664475004ADE31 /* foodStatic.json */; };
+		830C866C1D664967004ADE31 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 830C866B1D664967004ADE31 /* Utils.m */; };
+		830C866F1D664BD9004ADE31 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 830C866E1D664BD9004ADE31 /* CoreDataManager.m */; };
+		830C86871D68CFC7004ADE31 /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 830C86861D68CFC7004ADE31 /* NSString+Utils.m */; };
+		830C868A1D69C742004ADE31 /* NSDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 830C86891D69C742004ADE31 /* NSDictionary+Safe.m */; };
+		830C86921D69D8C3004ADE31 /* TextEntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 830C86901D69D8C3004ADE31 /* TextEntryCell.m */; };
+		830C86931D69D8C3004ADE31 /* TextEntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830C86911D69D8C3004ADE31 /* TextEntryCell.xib */; };
+		830C86981D69D9E4004ADE31 /* SegmentedControlCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 830C86961D69D9E4004ADE31 /* SegmentedControlCell.m */; };
+		830C86991D69D9E4004ADE31 /* SegmentedControlCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830C86971D69D9E4004ADE31 /* SegmentedControlCell.xib */; };
+		830C869F1D69F976004ADE31 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830C869E1D69F976004ADE31 /* MainViewController.m */; };
+		830C86B81D6A271D004ADE31 /* NSDate+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 830C86B71D6A271D004ADE31 /* NSDate+Utils.m */; };
+		830C86C11D6A3641004ADE31 /* MainViewTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830C86C01D6A3641004ADE31 /* MainViewTabBarController.m */; };
+		830C86C41D6A385E004ADE31 /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830C86C31D6A385E004ADE31 /* ListTableViewController.m */; };
+		830C86CF1D6A3AF9004ADE31 /* FoodCategoriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830C86CE1D6A3AF9004ADE31 /* FoodCategoriesTableViewController.m */; };
+		830C86D21D6A4127004ADE31 /* FoodTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830C86D11D6A4127004ADE31 /* FoodTableViewController.m */; };
+		830C86D51D6A4578004ADE31 /* ExercisesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830C86D41D6A4578004ADE31 /* ExercisesTableViewController.m */; };
+		836773861D6A7D1E002C9393 /* DailyDiary.m in Sources */ = {isa = PBXBuildFile; fileRef = 836773731D6A7D1E002C9393 /* DailyDiary.m */; };
+		836773871D6A7D1E002C9393 /* DailyDiary+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 836773751D6A7D1E002C9393 /* DailyDiary+CoreDataProperties.m */; };
+		836773881D6A7D1E002C9393 /* Exercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 836773771D6A7D1E002C9393 /* Exercise.m */; };
+		836773891D6A7D1E002C9393 /* Exercise+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 836773791D6A7D1E002C9393 /* Exercise+CoreDataProperties.m */; };
+		8367738A1D6A7D1E002C9393 /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = 8367737B1D6A7D1E002C9393 /* Food.m */; };
+		8367738B1D6A7D1E002C9393 /* Food+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8367737D1D6A7D1E002C9393 /* Food+CoreDataProperties.m */; };
+		8367738C1D6A7D1E002C9393 /* FoodCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8367737F1D6A7D1E002C9393 /* FoodCategory.m */; };
+		8367738D1D6A7D1E002C9393 /* FoodCategory+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 836773811D6A7D1E002C9393 /* FoodCategory+CoreDataProperties.m */; };
+		8367738E1D6A7D1E002C9393 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 836773831D6A7D1E002C9393 /* User.m */; };
+		8367738F1D6A7D1E002C9393 /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 836773851D6A7D1E002C9393 /* User+CoreDataProperties.m */; };
+		836773911D6B0F19002C9393 /* DailyDiary.h in Sources */ = {isa = PBXBuildFile; fileRef = 836773721D6A7D1E002C9393 /* DailyDiary.h */; };
+		836773921D6B0F19002C9393 /* DailyDiary+CoreDataProperties.h in Sources */ = {isa = PBXBuildFile; fileRef = 836773741D6A7D1E002C9393 /* DailyDiary+CoreDataProperties.h */; };
+		836773931D6B0F19002C9393 /* Exercise.h in Sources */ = {isa = PBXBuildFile; fileRef = 836773761D6A7D1E002C9393 /* Exercise.h */; };
+		836773941D6B0F19002C9393 /* Exercise+CoreDataProperties.h in Sources */ = {isa = PBXBuildFile; fileRef = 836773781D6A7D1E002C9393 /* Exercise+CoreDataProperties.h */; };
+		836773951D6B0F19002C9393 /* Food.h in Sources */ = {isa = PBXBuildFile; fileRef = 8367737A1D6A7D1E002C9393 /* Food.h */; };
+		836773961D6B0F19002C9393 /* Food+CoreDataProperties.h in Sources */ = {isa = PBXBuildFile; fileRef = 8367737C1D6A7D1E002C9393 /* Food+CoreDataProperties.h */; };
+		836773971D6B0F19002C9393 /* FoodCategory.h in Sources */ = {isa = PBXBuildFile; fileRef = 8367737E1D6A7D1E002C9393 /* FoodCategory.h */; };
+		836773981D6B0F19002C9393 /* FoodCategory+CoreDataProperties.h in Sources */ = {isa = PBXBuildFile; fileRef = 836773801D6A7D1E002C9393 /* FoodCategory+CoreDataProperties.h */; };
+		836773991D6B0F19002C9393 /* User.h in Sources */ = {isa = PBXBuildFile; fileRef = 836773821D6A7D1E002C9393 /* User.h */; };
+		8367739A1D6B0F19002C9393 /* User+CoreDataProperties.h in Sources */ = {isa = PBXBuildFile; fileRef = 836773841D6A7D1E002C9393 /* User+CoreDataProperties.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		830C86471D663961004ADE31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 830C86221D663961004ADE31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 830C86291D663961004ADE31;
+			remoteInfo = LifeSum;
+		};
+		830C86521D663961004ADE31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 830C86221D663961004ADE31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 830C86291D663961004ADE31;
+			remoteInfo = LifeSum;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		830C862A1D663961004ADE31 /* HealthApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		830C862E1D663961004ADE31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		830C86301D663961004ADE31 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		830C86311D663961004ADE31 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		830C86331D663961004ADE31 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		830C86341D663961004ADE31 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		830C86371D663961004ADE31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		830C863A1D663961004ADE31 /* LifeSum.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LifeSum.xcdatamodel; sourceTree = "<group>"; };
+		830C863C1D663961004ADE31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		830C863F1D663961004ADE31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		830C86411D663961004ADE31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		830C86461D663961004ADE31 /* HealthApp.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthApp.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		830C864A1D663961004ADE31 /* HealthAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HealthAppTests.m; sourceTree = "<group>"; };
+		830C864C1D663961004ADE31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		830C86511D663961004ADE31 /* HealthApp.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthApp.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		830C86551D663961004ADE31 /* HealthAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HealthAppUITests.m; sourceTree = "<group>"; };
+		830C86571D663961004ADE31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		830C86631D664475004ADE31 /* categoriesStatic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = categoriesStatic.json; sourceTree = "<group>"; };
+		830C86641D664475004ADE31 /* exercisesStatic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exercisesStatic.json; sourceTree = "<group>"; };
+		830C86651D664475004ADE31 /* foodStatic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foodStatic.json; sourceTree = "<group>"; };
+		830C866A1D664967004ADE31 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		830C866B1D664967004ADE31 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		830C866D1D664BD9004ADE31 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		830C866E1D664BD9004ADE31 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		830C86851D68CFC7004ADE31 /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Utils.h"; path = "Categories/NSString+Utils.h"; sourceTree = "<group>"; };
+		830C86861D68CFC7004ADE31 /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Utils.m"; path = "Categories/NSString+Utils.m"; sourceTree = "<group>"; };
+		830C86881D69C742004ADE31 /* NSDictionary+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Safe.h"; path = "Categories/NSDictionary+Safe.h"; sourceTree = "<group>"; };
+		830C86891D69C742004ADE31 /* NSDictionary+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Safe.m"; path = "Categories/NSDictionary+Safe.m"; sourceTree = "<group>"; };
+		830C868F1D69D8C3004ADE31 /* TextEntryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextEntryCell.h; sourceTree = "<group>"; };
+		830C86901D69D8C3004ADE31 /* TextEntryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextEntryCell.m; sourceTree = "<group>"; };
+		830C86911D69D8C3004ADE31 /* TextEntryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextEntryCell.xib; sourceTree = "<group>"; };
+		830C86951D69D9E4004ADE31 /* SegmentedControlCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentedControlCell.h; sourceTree = "<group>"; };
+		830C86961D69D9E4004ADE31 /* SegmentedControlCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentedControlCell.m; sourceTree = "<group>"; };
+		830C86971D69D9E4004ADE31 /* SegmentedControlCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentedControlCell.xib; sourceTree = "<group>"; };
+		830C869D1D69F976004ADE31 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		830C869E1D69F976004ADE31 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		830C86B61D6A271D004ADE31 /* NSDate+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+Utils.h"; path = "Categories/NSDate+Utils.h"; sourceTree = "<group>"; };
+		830C86B71D6A271D004ADE31 /* NSDate+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Utils.m"; path = "Categories/NSDate+Utils.m"; sourceTree = "<group>"; };
+		830C86BF1D6A3641004ADE31 /* MainViewTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewTabBarController.h; sourceTree = "<group>"; };
+		830C86C01D6A3641004ADE31 /* MainViewTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewTabBarController.m; sourceTree = "<group>"; };
+		830C86C21D6A385E004ADE31 /* ListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewController.h; sourceTree = "<group>"; };
+		830C86C31D6A385E004ADE31 /* ListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewController.m; sourceTree = "<group>"; };
+		830C86CD1D6A3AF8004ADE31 /* FoodCategoriesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodCategoriesTableViewController.h; sourceTree = "<group>"; };
+		830C86CE1D6A3AF9004ADE31 /* FoodCategoriesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodCategoriesTableViewController.m; sourceTree = "<group>"; };
+		830C86D01D6A4127004ADE31 /* FoodTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodTableViewController.h; sourceTree = "<group>"; };
+		830C86D11D6A4127004ADE31 /* FoodTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodTableViewController.m; sourceTree = "<group>"; };
+		830C86D31D6A4578004ADE31 /* ExercisesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExercisesTableViewController.h; sourceTree = "<group>"; };
+		830C86D41D6A4578004ADE31 /* ExercisesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExercisesTableViewController.m; sourceTree = "<group>"; };
+		830C86D61D6A4C4A004ADE31 /* DailyDiaryDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyDiaryDelegate.h; sourceTree = "<group>"; };
+		836773721D6A7D1E002C9393 /* DailyDiary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DailyDiary.h; path = Model/DailyDiary.h; sourceTree = "<group>"; };
+		836773731D6A7D1E002C9393 /* DailyDiary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DailyDiary.m; path = Model/DailyDiary.m; sourceTree = "<group>"; };
+		836773741D6A7D1E002C9393 /* DailyDiary+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DailyDiary+CoreDataProperties.h"; path = "Model/DailyDiary+CoreDataProperties.h"; sourceTree = "<group>"; };
+		836773751D6A7D1E002C9393 /* DailyDiary+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "DailyDiary+CoreDataProperties.m"; path = "Model/DailyDiary+CoreDataProperties.m"; sourceTree = "<group>"; };
+		836773761D6A7D1E002C9393 /* Exercise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Exercise.h; path = Model/Exercise.h; sourceTree = "<group>"; };
+		836773771D6A7D1E002C9393 /* Exercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Exercise.m; path = Model/Exercise.m; sourceTree = "<group>"; };
+		836773781D6A7D1E002C9393 /* Exercise+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Exercise+CoreDataProperties.h"; path = "Model/Exercise+CoreDataProperties.h"; sourceTree = "<group>"; };
+		836773791D6A7D1E002C9393 /* Exercise+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Exercise+CoreDataProperties.m"; path = "Model/Exercise+CoreDataProperties.m"; sourceTree = "<group>"; };
+		8367737A1D6A7D1E002C9393 /* Food.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Food.h; path = Model/Food.h; sourceTree = "<group>"; };
+		8367737B1D6A7D1E002C9393 /* Food.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Food.m; path = Model/Food.m; sourceTree = "<group>"; };
+		8367737C1D6A7D1E002C9393 /* Food+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Food+CoreDataProperties.h"; path = "Model/Food+CoreDataProperties.h"; sourceTree = "<group>"; };
+		8367737D1D6A7D1E002C9393 /* Food+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Food+CoreDataProperties.m"; path = "Model/Food+CoreDataProperties.m"; sourceTree = "<group>"; };
+		8367737E1D6A7D1E002C9393 /* FoodCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoodCategory.h; path = Model/FoodCategory.h; sourceTree = "<group>"; };
+		8367737F1D6A7D1E002C9393 /* FoodCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoodCategory.m; path = Model/FoodCategory.m; sourceTree = "<group>"; };
+		836773801D6A7D1E002C9393 /* FoodCategory+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "FoodCategory+CoreDataProperties.h"; path = "Model/FoodCategory+CoreDataProperties.h"; sourceTree = "<group>"; };
+		836773811D6A7D1E002C9393 /* FoodCategory+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "FoodCategory+CoreDataProperties.m"; path = "Model/FoodCategory+CoreDataProperties.m"; sourceTree = "<group>"; };
+		836773821D6A7D1E002C9393 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = Model/User.h; sourceTree = "<group>"; };
+		836773831D6A7D1E002C9393 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = Model/User.m; sourceTree = "<group>"; };
+		836773841D6A7D1E002C9393 /* User+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "User+CoreDataProperties.h"; path = "Model/User+CoreDataProperties.h"; sourceTree = "<group>"; };
+		836773851D6A7D1E002C9393 /* User+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "User+CoreDataProperties.m"; path = "Model/User+CoreDataProperties.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		830C86271D663961004ADE31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830C86431D663961004ADE31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830C864E1D663961004ADE31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		830C86211D663961004ADE31 = {
+			isa = PBXGroup;
+			children = (
+				830C862C1D663961004ADE31 /* HealthApp */,
+				830C86491D663961004ADE31 /* HealthAppTests */,
+				830C86541D663961004ADE31 /* HealthAppUITests */,
+				830C862B1D663961004ADE31 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		830C862B1D663961004ADE31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				830C862A1D663961004ADE31 /* HealthApp.app */,
+				830C86461D663961004ADE31 /* HealthApp.xctest */,
+				830C86511D663961004ADE31 /* HealthApp.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		830C862C1D663961004ADE31 /* HealthApp */ = {
+			isa = PBXGroup;
+			children = (
+				836773371D6A6E00002C9393 /* ViewControllers */,
+				830C86941D69D8EC004ADE31 /* Utils */,
+				830C868E1D69D8BC004ADE31 /* XIB */,
+				830C86841D68CFA5004ADE31 /* Categories */,
+				8367739B1D6B1298002C9393 /* Protocols */,
+				830C86701D664BDF004ADE31 /* CoreData */,
+				830C86691D66447A004ADE31 /* JSON */,
+				830C86301D663961004ADE31 /* AppDelegate.h */,
+				830C86311D663961004ADE31 /* AppDelegate.m */,
+				830C86361D663961004ADE31 /* Main.storyboard */,
+				830C863C1D663961004ADE31 /* Assets.xcassets */,
+				830C863E1D663961004ADE31 /* LaunchScreen.storyboard */,
+				830C86411D663961004ADE31 /* Info.plist */,
+				830C862D1D663961004ADE31 /* Supporting Files */,
+			);
+			path = HealthApp;
+			sourceTree = "<group>";
+		};
+		830C862D1D663961004ADE31 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				830C862E1D663961004ADE31 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		830C86491D663961004ADE31 /* HealthAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				830C864A1D663961004ADE31 /* HealthAppTests.m */,
+				830C864C1D663961004ADE31 /* Info.plist */,
+			);
+			path = HealthAppTests;
+			sourceTree = "<group>";
+		};
+		830C86541D663961004ADE31 /* HealthAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				830C86551D663961004ADE31 /* HealthAppUITests.m */,
+				830C86571D663961004ADE31 /* Info.plist */,
+			);
+			path = HealthAppUITests;
+			sourceTree = "<group>";
+		};
+		830C86691D66447A004ADE31 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				830C86631D664475004ADE31 /* categoriesStatic.json */,
+				830C86641D664475004ADE31 /* exercisesStatic.json */,
+				830C86651D664475004ADE31 /* foodStatic.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		830C86701D664BDF004ADE31 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				836773901D6B0EB3002C9393 /* Models */,
+				830C86391D663961004ADE31 /* LifeSum.xcdatamodeld */,
+				830C866D1D664BD9004ADE31 /* CoreDataManager.h */,
+				830C866E1D664BD9004ADE31 /* CoreDataManager.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		830C86841D68CFA5004ADE31 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				830C86851D68CFC7004ADE31 /* NSString+Utils.h */,
+				830C86861D68CFC7004ADE31 /* NSString+Utils.m */,
+				830C86881D69C742004ADE31 /* NSDictionary+Safe.h */,
+				830C86891D69C742004ADE31 /* NSDictionary+Safe.m */,
+				830C86B61D6A271D004ADE31 /* NSDate+Utils.h */,
+				830C86B71D6A271D004ADE31 /* NSDate+Utils.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		830C868E1D69D8BC004ADE31 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				830C868F1D69D8C3004ADE31 /* TextEntryCell.h */,
+				830C86901D69D8C3004ADE31 /* TextEntryCell.m */,
+				830C86911D69D8C3004ADE31 /* TextEntryCell.xib */,
+				830C86951D69D9E4004ADE31 /* SegmentedControlCell.h */,
+				830C86961D69D9E4004ADE31 /* SegmentedControlCell.m */,
+				830C86971D69D9E4004ADE31 /* SegmentedControlCell.xib */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		830C86941D69D8EC004ADE31 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				830C866A1D664967004ADE31 /* Utils.h */,
+				830C866B1D664967004ADE31 /* Utils.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		836773371D6A6E00002C9393 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				830C86331D663961004ADE31 /* ViewController.h */,
+				830C86341D663961004ADE31 /* ViewController.m */,
+				830C869D1D69F976004ADE31 /* MainViewController.h */,
+				830C869E1D69F976004ADE31 /* MainViewController.m */,
+				830C86BF1D6A3641004ADE31 /* MainViewTabBarController.h */,
+				830C86C01D6A3641004ADE31 /* MainViewTabBarController.m */,
+				830C86C21D6A385E004ADE31 /* ListTableViewController.h */,
+				830C86C31D6A385E004ADE31 /* ListTableViewController.m */,
+				830C86CD1D6A3AF8004ADE31 /* FoodCategoriesTableViewController.h */,
+				830C86CE1D6A3AF9004ADE31 /* FoodCategoriesTableViewController.m */,
+				830C86D01D6A4127004ADE31 /* FoodTableViewController.h */,
+				830C86D11D6A4127004ADE31 /* FoodTableViewController.m */,
+				830C86D31D6A4578004ADE31 /* ExercisesTableViewController.h */,
+				830C86D41D6A4578004ADE31 /* ExercisesTableViewController.m */,
+			);
+			name = ViewControllers;
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		836773901D6B0EB3002C9393 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				836773721D6A7D1E002C9393 /* DailyDiary.h */,
+				836773731D6A7D1E002C9393 /* DailyDiary.m */,
+				836773741D6A7D1E002C9393 /* DailyDiary+CoreDataProperties.h */,
+				836773751D6A7D1E002C9393 /* DailyDiary+CoreDataProperties.m */,
+				836773761D6A7D1E002C9393 /* Exercise.h */,
+				836773771D6A7D1E002C9393 /* Exercise.m */,
+				836773781D6A7D1E002C9393 /* Exercise+CoreDataProperties.h */,
+				836773791D6A7D1E002C9393 /* Exercise+CoreDataProperties.m */,
+				8367737A1D6A7D1E002C9393 /* Food.h */,
+				8367737B1D6A7D1E002C9393 /* Food.m */,
+				8367737C1D6A7D1E002C9393 /* Food+CoreDataProperties.h */,
+				8367737D1D6A7D1E002C9393 /* Food+CoreDataProperties.m */,
+				8367737E1D6A7D1E002C9393 /* FoodCategory.h */,
+				8367737F1D6A7D1E002C9393 /* FoodCategory.m */,
+				836773801D6A7D1E002C9393 /* FoodCategory+CoreDataProperties.h */,
+				836773811D6A7D1E002C9393 /* FoodCategory+CoreDataProperties.m */,
+				836773821D6A7D1E002C9393 /* User.h */,
+				836773831D6A7D1E002C9393 /* User.m */,
+				836773841D6A7D1E002C9393 /* User+CoreDataProperties.h */,
+				836773851D6A7D1E002C9393 /* User+CoreDataProperties.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8367739B1D6B1298002C9393 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				830C86D61D6A4C4A004ADE31 /* DailyDiaryDelegate.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		830C86291D663961004ADE31 /* HealthApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 830C865A1D663961004ADE31 /* Build configuration list for PBXNativeTarget "HealthApp" */;
+			buildPhases = (
+				830C86261D663961004ADE31 /* Sources */,
+				830C86271D663961004ADE31 /* Frameworks */,
+				830C86281D663961004ADE31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HealthApp;
+			productName = LifeSum;
+			productReference = 830C862A1D663961004ADE31 /* HealthApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		830C86451D663961004ADE31 /* HealthAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 830C865D1D663961004ADE31 /* Build configuration list for PBXNativeTarget "HealthAppTests" */;
+			buildPhases = (
+				830C86421D663961004ADE31 /* Sources */,
+				830C86431D663961004ADE31 /* Frameworks */,
+				830C86441D663961004ADE31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				830C86481D663961004ADE31 /* PBXTargetDependency */,
+			);
+			name = HealthAppTests;
+			productName = LifeSumTests;
+			productReference = 830C86461D663961004ADE31 /* HealthApp.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		830C86501D663961004ADE31 /* HealthAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 830C86601D663961004ADE31 /* Build configuration list for PBXNativeTarget "HealthAppUITests" */;
+			buildPhases = (
+				830C864D1D663961004ADE31 /* Sources */,
+				830C864E1D663961004ADE31 /* Frameworks */,
+				830C864F1D663961004ADE31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				830C86531D663961004ADE31 /* PBXTargetDependency */,
+			);
+			name = HealthAppUITests;
+			productName = LifeSumUITests;
+			productReference = 830C86511D663961004ADE31 /* HealthApp.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		830C86221D663961004ADE31 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = FarisHalteh;
+				TargetAttributes = {
+					830C86291D663961004ADE31 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					830C86451D663961004ADE31 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 830C86291D663961004ADE31;
+					};
+					830C86501D663961004ADE31 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 830C86291D663961004ADE31;
+					};
+				};
+			};
+			buildConfigurationList = 830C86251D663961004ADE31 /* Build configuration list for PBXProject "HealthApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 830C86211D663961004ADE31;
+			productRefGroup = 830C862B1D663961004ADE31 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				830C86291D663961004ADE31 /* HealthApp */,
+				830C86451D663961004ADE31 /* HealthAppTests */,
+				830C86501D663961004ADE31 /* HealthAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		830C86281D663961004ADE31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830C86401D663961004ADE31 /* LaunchScreen.storyboard in Resources */,
+				830C86931D69D8C3004ADE31 /* TextEntryCell.xib in Resources */,
+				830C863D1D663961004ADE31 /* Assets.xcassets in Resources */,
+				830C86381D663961004ADE31 /* Main.storyboard in Resources */,
+				830C86671D664475004ADE31 /* exercisesStatic.json in Resources */,
+				830C86661D664475004ADE31 /* categoriesStatic.json in Resources */,
+				830C86991D69D9E4004ADE31 /* SegmentedControlCell.xib in Resources */,
+				830C86681D664475004ADE31 /* foodStatic.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830C86441D663961004ADE31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830C864F1D663961004ADE31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		830C86261D663961004ADE31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				836773911D6B0F19002C9393 /* DailyDiary.h in Sources */,
+				836773921D6B0F19002C9393 /* DailyDiary+CoreDataProperties.h in Sources */,
+				836773931D6B0F19002C9393 /* Exercise.h in Sources */,
+				836773941D6B0F19002C9393 /* Exercise+CoreDataProperties.h in Sources */,
+				836773951D6B0F19002C9393 /* Food.h in Sources */,
+				836773961D6B0F19002C9393 /* Food+CoreDataProperties.h in Sources */,
+				836773971D6B0F19002C9393 /* FoodCategory.h in Sources */,
+				836773981D6B0F19002C9393 /* FoodCategory+CoreDataProperties.h in Sources */,
+				836773991D6B0F19002C9393 /* User.h in Sources */,
+				8367739A1D6B0F19002C9393 /* User+CoreDataProperties.h in Sources */,
+				8367738E1D6A7D1E002C9393 /* User.m in Sources */,
+				830C866F1D664BD9004ADE31 /* CoreDataManager.m in Sources */,
+				8367738D1D6A7D1E002C9393 /* FoodCategory+CoreDataProperties.m in Sources */,
+				836773881D6A7D1E002C9393 /* Exercise.m in Sources */,
+				830C86D51D6A4578004ADE31 /* ExercisesTableViewController.m in Sources */,
+				830C86C11D6A3641004ADE31 /* MainViewTabBarController.m in Sources */,
+				836773861D6A7D1E002C9393 /* DailyDiary.m in Sources */,
+				830C86921D69D8C3004ADE31 /* TextEntryCell.m in Sources */,
+				830C86B81D6A271D004ADE31 /* NSDate+Utils.m in Sources */,
+				8367738C1D6A7D1E002C9393 /* FoodCategory.m in Sources */,
+				830C86351D663961004ADE31 /* ViewController.m in Sources */,
+				830C869F1D69F976004ADE31 /* MainViewController.m in Sources */,
+				8367738F1D6A7D1E002C9393 /* User+CoreDataProperties.m in Sources */,
+				830C863B1D663961004ADE31 /* LifeSum.xcdatamodeld in Sources */,
+				830C86321D663961004ADE31 /* AppDelegate.m in Sources */,
+				830C866C1D664967004ADE31 /* Utils.m in Sources */,
+				830C86C41D6A385E004ADE31 /* ListTableViewController.m in Sources */,
+				8367738A1D6A7D1E002C9393 /* Food.m in Sources */,
+				830C86D21D6A4127004ADE31 /* FoodTableViewController.m in Sources */,
+				830C86981D69D9E4004ADE31 /* SegmentedControlCell.m in Sources */,
+				8367738B1D6A7D1E002C9393 /* Food+CoreDataProperties.m in Sources */,
+				836773871D6A7D1E002C9393 /* DailyDiary+CoreDataProperties.m in Sources */,
+				830C862F1D663961004ADE31 /* main.m in Sources */,
+				836773891D6A7D1E002C9393 /* Exercise+CoreDataProperties.m in Sources */,
+				830C86CF1D6A3AF9004ADE31 /* FoodCategoriesTableViewController.m in Sources */,
+				830C868A1D69C742004ADE31 /* NSDictionary+Safe.m in Sources */,
+				830C86871D68CFC7004ADE31 /* NSString+Utils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830C86421D663961004ADE31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830C864B1D663961004ADE31 /* HealthAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830C864D1D663961004ADE31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830C86561D663961004ADE31 /* HealthAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		830C86481D663961004ADE31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 830C86291D663961004ADE31 /* HealthApp */;
+			targetProxy = 830C86471D663961004ADE31 /* PBXContainerItemProxy */;
+		};
+		830C86531D663961004ADE31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 830C86291D663961004ADE31 /* HealthApp */;
+			targetProxy = 830C86521D663961004ADE31 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		830C86361D663961004ADE31 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				830C86371D663961004ADE31 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		830C863E1D663961004ADE31 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				830C863F1D663961004ADE31 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		830C86581D663961004ADE31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MOMC_NO_INVERSE_RELATIONSHIP_WARNINGS = YES;
+				MOMC_NO_WARNINGS = YES;
+				MOMC_SUPPRESS_INVERSE_TRANSIENT_ERROR = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		830C86591D663961004ADE31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MOMC_NO_INVERSE_RELATIONSHIP_WARNINGS = YES;
+				MOMC_NO_WARNINGS = YES;
+				MOMC_SUPPRESS_INVERSE_TRANSIENT_ERROR = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		830C865B1D663961004ADE31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HealthApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FarisHalteh.HealthApp;
+				PRODUCT_NAME = HealthApp;
+			};
+			name = Debug;
+		};
+		830C865C1D663961004ADE31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HealthApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FarisHalteh.HealthApp;
+				PRODUCT_NAME = HealthApp;
+			};
+			name = Release;
+		};
+		830C865E1D663961004ADE31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LifeSumTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FarisHalteh.LifeSumTests;
+				PRODUCT_NAME = HealthApp;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealthApp.app/HealthApp";
+			};
+			name = Debug;
+		};
+		830C865F1D663961004ADE31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LifeSumTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FarisHalteh.LifeSumTests;
+				PRODUCT_NAME = HealthApp;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealthApp.app/HealthApp";
+			};
+			name = Release;
+		};
+		830C86611D663961004ADE31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LifeSumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FarisHalteh.LifeSumUITests;
+				PRODUCT_NAME = HealthApp;
+				TEST_TARGET_NAME = LifeSum;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		830C86621D663961004ADE31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LifeSumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FarisHalteh.LifeSumUITests;
+				PRODUCT_NAME = HealthApp;
+				TEST_TARGET_NAME = LifeSum;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		830C86251D663961004ADE31 /* Build configuration list for PBXProject "HealthApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830C86581D663961004ADE31 /* Debug */,
+				830C86591D663961004ADE31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		830C865A1D663961004ADE31 /* Build configuration list for PBXNativeTarget "HealthApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830C865B1D663961004ADE31 /* Debug */,
+				830C865C1D663961004ADE31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		830C865D1D663961004ADE31 /* Build configuration list for PBXNativeTarget "HealthAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830C865E1D663961004ADE31 /* Debug */,
+				830C865F1D663961004ADE31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		830C86601D663961004ADE31 /* Build configuration list for PBXNativeTarget "HealthAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830C86611D663961004ADE31 /* Debug */,
+				830C86621D663961004ADE31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		830C86391D663961004ADE31 /* LifeSum.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				830C863A1D663961004ADE31 /* LifeSum.xcdatamodel */,
+			);
+			currentVersion = 830C863A1D663961004ADE31 /* LifeSum.xcdatamodel */;
+			path = LifeSum.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 830C86221D663961004ADE31 /* Project object */;
+}
